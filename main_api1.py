@@ -27,7 +27,9 @@ def credito():
 
 def verifica(age , uf, renda):
     list_emprestimo = [{'tipo_emprestimo':'Eprestimo_pessoal', 'taxa': 2}]
-
+    
+    //Validaria aqui o cenário do consignado. Qualquer dúvida fique a vontade para me procurar para tirar dúvida.
+    //Dica a elegibilidade de um empréstimo não anula o outro.
     if renda >= 5000:
         if age <= 30:
             list_emprestimo.append( {'tipo_emprestimo': 'Credito_consignato','taxa': 2})
@@ -41,7 +43,10 @@ def verifica(age , uf, renda):
     return list_emprestimo
 
 
-
+//Reflexão
+//Esse metodo está só criando o cliente ou está fazendo algo a mais ? 
+//Será que ele tem mais de uma responsabilidade ?
+//O nome do parametro de entrada traduz bem o que é o objeto?
 def criandoClient(value):
 
     client = {
